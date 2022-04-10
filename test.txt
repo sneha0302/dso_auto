@@ -1,2 +1,3 @@
 hi testing
 Added by Program for SCM Integrate testing
+password=123
