@@ -44,7 +44,7 @@ steps:
 
       docker pull owasp/zap2docker-stable
 
-      docker run --rm  -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py -t $(applicationUrl) -g gen.conf -x OWASP-ZAP-Report.xml -r scan-report.html
+      docker run --rm  -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py -t $(applicationUrl) -g gen.conf -x OWASP-ZAP-Report.xml -r scan-report.html --hook=/zap/wrk/my-hooks.py
       true 
 
 
